@@ -3,11 +3,16 @@
 
 #include "pch.h"
 #include "reader.h"
+#include "checkIfPrintStatement.h"
+#include <vector>
 
 int main() 
 {
-	std::string filename{ read_file() };
+	std::vector<std::string> lines{};
+	const std::string filename{ read_file() };
+	std::string CppFileName{ "" };
 	std::cout << filename << std::endl;
+	const std::string printStatementChecker{ "not a print statement"};
 
 	if(checkFileEnding(filename, ".py")) std::cout << "Python file" << std::endl;
 
@@ -26,11 +31,25 @@ int main()
 	{
 		std::string read{};
 		while(std::getline(pyFile, read)) {
-			std::cout << read;
+			lines.push_back(read);
 		
 		}
 
 	}
 
+		std::cout << "\n#include <iostream>\n\n";
+
+		std::cout << "int main() {\n";
+
+	for (int i = 0; i < lines.size(); i++) {
+		
+
+		if(ifPrintStatementTrueExecuteStdCout(lines[i], checkIfPrintStatementTrue(lines[i])) == printStatementChecker) continue;
+		else std::cout << "std::cout << " << ifPrintStatementTrueExecuteStdCout(lines[i], checkIfPrintStatementTrue(lines[i])) << " << std::endl;" << std::endl;
+		
+
+	
+	}
+		std::cout << "}\n";
 	return 0;
 }

@@ -128,10 +128,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="checkIfPrintStatement.cpp" />
     <ClCompile Include="cpp-py.cpp" />
     <ClCompile Include="reader.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="checkIfPrintStatement.h" />
     <ClInclude Include="reader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
