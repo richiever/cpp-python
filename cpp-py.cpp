@@ -10,7 +10,14 @@ int main()
 	std::cout << filename << std::endl;
 
 	if(checkFileEnding(filename, ".py")) std::cout << "Python file" << std::endl;
-	else std::cout << "Not a Python file" << std::endl;
+
+	// include check that if not python file, then exit
+	else 
+	{ 
+		std::cout << "Not a Python file\n";
+	}
+
+
 
 	std::fstream pyFile;
 	pyFile.open(filename, std::ios::in);
