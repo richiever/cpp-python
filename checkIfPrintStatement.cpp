@@ -2,7 +2,7 @@
 
 #include "pch.h"
 
-bool checkIfPrintStatementTrue(const std::string& strToCheck) 
+bool checkIfPrintStatement::checkIfPrintStatementTrue(const std::string& strToCheck)
 {
 	std::string prefix = "print(";
 
@@ -10,7 +10,7 @@ bool checkIfPrintStatementTrue(const std::string& strToCheck)
 	else return false;
 }
 
-std::string ifPrintStatementTrueExecuteStdCout(const std::string& strToCheck, const bool& check) 
+std::string checkIfPrintStatement::ifPrintStatementTrueExecuteStdCout(const std::string& strToCheck, const bool& check)
 {
 	if (check) 
 	{

@@ -2,7 +2,8 @@
 
 #include "pch.h"
 
-bool checkIfPrintStatementTrue(const std::string& strToCheck);
-
-std::string ifPrintStatementTrueExecuteStdCout(const std::string& strToCheck, const bool& check);
+namespace checkIfPrintStatement {
+	bool checkIfPrintStatementTrue(const std::string& strToCheck);
+	std::string ifPrintStatementTrueExecuteStdCout(const std::string& strToCheck, const bool& check);
+}
 
