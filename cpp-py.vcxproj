@@ -132,11 +132,13 @@
     <ClCompile Include="CommentCheck.cpp" />
     <ClCompile Include="cpp-py.cpp" />
     <ClCompile Include="reader.cpp" />
+    <ClCompile Include="variableTypeChecker.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="checkIfPrintStatement.h" />
     <ClInclude Include="CommentCheck.h" />
     <ClInclude Include="reader.h" />
+    <ClInclude Include="variableTypeChecker.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

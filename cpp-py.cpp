@@ -48,6 +48,7 @@ int main()
 		std::cout << "int main() {\n";
 		//
 
+
 	for (int i = 0; i < lines.size(); i++) {
 		
 		if (commentCheck::checkIfComment(lines[i]))
