@@ -1,2 +1,0 @@
-C:\Users\User\Documents\repos\cpp-python\cpp-py\x64\Debug\cpp-py.exe
-C:\Users\User\Documents\repos\cpp-python\cpp-python\x64\Debug\cpp-py.exe
