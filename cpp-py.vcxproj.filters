@@ -19,6 +19,12 @@
     <Filter Include="CheckIfPrintStatemnt">
       <UniqueIdentifier>{187f8426-c430-498a-8088-7a7f6db4e9e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NewFilter1">
+      <UniqueIdentifier>{be7e6c3b-85a5-4eb6-b00a-96485cf0c12c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommentCheck">
+      <UniqueIdentifier>{c1c0a5fe-3b42-4267-bad9-b1c0388686b1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cpp-py.cpp">
@@ -30,6 +36,9 @@
     <ClCompile Include="checkIfPrintStatement.cpp">
       <Filter>CheckIfPrintStatemnt</Filter>
     </ClCompile>
+    <ClCompile Include="CommentCheck.cpp">
+      <Filter>CommentCheck</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="reader.h">
@@ -37,6 +46,9 @@
     </ClInclude>
     <ClInclude Include="checkIfPrintStatement.h">
       <Filter>CheckIfPrintStatemnt</Filter>
+    </ClInclude>
+    <ClInclude Include="CommentCheck.h">
+      <Filter>CommentCheck</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 #include "CommentCheck.h"
 
 bool commentCheck::checkIfComment(const std::string& strToCheck)
-{	
+{
 	if (strToCheck[0] == '#')
 	{
 		return true;
